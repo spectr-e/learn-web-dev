@@ -45,6 +45,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 24px;
 }
 h1 {
   font-size: 72px;
@@ -188,7 +189,7 @@ footer {
     padding: 48px 24px;
   }
   .footimg{
-max-width: 300px;
+    max-width: 300px;
   }
   .footlink{
     padding: 0 4px;
