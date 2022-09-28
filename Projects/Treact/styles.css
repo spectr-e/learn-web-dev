@@ -16,7 +16,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   max-width: 1280px;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.2px;
 }
 
 .nav__container {
@@ -55,8 +55,8 @@ li {
 .nav__link {
   margin: 0 24px;
   padding-bottom: 4px;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   color: #243e63;
   text-decoration: none;
 }
@@ -66,6 +66,7 @@ li {
   border-radius: 9999px;
   margin: 0;
   padding: 12px 32px;
+  font-weight: 600;
   color: white;
 }
 
@@ -95,7 +96,7 @@ header {
 h1 {
   font-weight: 700;
   line-height: 1.25;
-  font-size: 40px;
+  font-size: 36px;
 }
 
 .purple {
@@ -104,7 +105,7 @@ h1 {
 
 .header__descr--p {
   margin: 36px 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   color: #243e63;
@@ -123,17 +124,55 @@ h1 {
 }
 
 input {
-  display: inline-block;
+  display: block;
   width: 100%;
   border-radius: 9999px;
-  border: 3px solid rgb(226, 232, 240);
+  border: 2px solid rgb(226, 232, 240);
   padding: 20px 192px 20px 32px;
   color: #243e63;
+  opacity: 64%;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
 }
 
+.header__descr--inputbtn {
+  background-color: #6415FF;
+  border: none;
+  border-radius: 9999px;
+  margin: 8px 8px 0 8px;
+  padding: 16px 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #ffff;
+  transform: translateY(-67px);
+  right: 700px;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
 .header__descr--partners {
   margin-top: 80px;
+}
+.header__descr--partnersimg {
+  width: 100%;
+  padding-top: 16px;
+  opacity: 50%;
+}
+.header__descr--partnersdescr {
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color: #243e63;
+  opacity: 50%;
 }
