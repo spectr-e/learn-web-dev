@@ -88,9 +88,9 @@ header {
 
 .header__descr {
   width: 40%;
+  max-width: none;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   text-align: left;
 }
 h1 {
@@ -158,7 +158,7 @@ input {
 }
 
 button:active {
-  transform: translateY(1px);
+  background-color: #243e63;
 }
 
 .header__descr--partners {
@@ -175,4 +175,27 @@ button:active {
   letter-spacing: 0.8px;
   color: #243e63;
   opacity: 50%;
+}
+
+.features {
+  position: relative;
+}
+
+.features__wrapper {
+  margin: 0 auto;
+  padding: 96px 0;
+  max-width: 1024px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.features__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__intro--title {
+  margin-bottom: 16px;
 }
