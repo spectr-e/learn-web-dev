@@ -137,7 +137,7 @@ input {
 }
 
 .header__descr--inputbtn {
-  background-color: #6415FF;
+  background-color: #6415ff;
   border: none;
   border-radius: 9999px;
   margin: 8px 8px 0 8px;
@@ -198,4 +198,37 @@ button:active {
 
 .features__intro--title {
   margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+}
+
+.features__intro--tag {
+  color: #243e63;
+  font-size: 48px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  font-weight: 900;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.features__intro--descr {
+  width: 100%;
+  max-width: 576px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 1.825;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 60%;
+  color: #243e63;
+}
+
+.container {
+  margin-top: 40px;
+  width: 100%;
+}
+.ftrs__descr {
+  width: 100%;
+  display: flex;
 }
