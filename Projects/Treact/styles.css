@@ -122,6 +122,11 @@ h1 {
   width: 100%;
   max-width: 512px;
 }
+.header__descr--input {
+  position: relative;
+  max-width: 448px;
+  text-align: center;
+}
 
 input {
   display: block;
@@ -137,12 +142,12 @@ input {
 }
 
 .header__descr--inputbtn {
+  position: absolute;
   background-color: #6415ff;
   border: none;
   border-radius: 9999px;
   margin: 8px 8px 0 8px;
   padding: 16px 0;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,8 +158,8 @@ input {
   line-height: 1;
   text-align: center;
   color: #ffff;
-  transform: translateY(-67px);
-  right: 700px;
+  /* transform: translateY(-67px); */
+  /* right: 700px; */
 }
 
 button:active {
