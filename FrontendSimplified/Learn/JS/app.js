@@ -98,7 +98,6 @@ console.log(decide);
  */
 
 //THE FIZZBUZZ Exercise
-
 /** Part A
  * Write a for-loop that loops through 1 to 20
  * If the number is divisible by 3, print 'Frontend'
@@ -139,3 +138,37 @@ let strg = "Frontend Simplified"
 for (i in strg) {
     console.log(strg[i]);
 }
+
+//FUNCTIONS
+/**
+ * DRY - Don't Repeat Yourself
+ */
+
+//Function defination - parameters
+function welcomePerson(person) {
+    console.log(`Welcome, ${person}`)
+}
+
+function fn(a,b) {
+    return a + b;
+}
+
+//Function calling - arguements
+welcomePerson('Josiah')
+console.log(fn(5,16))
+
+// Exercise:
+/**
+ * Create a function that converts Celcius to Fahrenheit
+ * Formula: F = C x 1.8 + 32
+ * @example
+ * convCtoF(0) - 32
+ * convCtoF(10) -50
+ */
+
+function convCtoF(temp) {
+    F = temp * 1.8 + 32
+    return F
+}
+
+console.log(convCtoF(10))
