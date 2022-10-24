@@ -124,7 +124,7 @@ for (i = 0; i <= 20; ++i) {
 /** Part B
  * Print out every character from the string:
  * 'Frontend Simplified'
- * 
+ *
  * @example
  * 'F'
  * 'r'
@@ -134,29 +134,25 @@ for (i = 0; i <= 20; ++i) {
  * 'd'
  */
 
-let strg = "Frontend Simplified"
+let strg = "Frontend Simplified";
 for (i in strg) {
-    console.log(strg[i]);
+  console.log(strg[i]);
 }
 
 //FUNCTIONS
 /**
  * DRY - Don't Repeat Yourself
  */
-
 //Function defination - parameters
 function welcomePerson(person) {
-    console.log(`Welcome, ${person}`)
+  console.log(`Welcome, ${person}`);
 }
-
-function fn(a,b) {
-    return a + b;
+function fn(a, b) {
+  return a + b;
 }
-
 //Function calling - arguements
-welcomePerson('Josiah')
-console.log(fn(5,16))
-
+welcomePerson("Josiah");
+console.log(fn(5, 16));
 // Exercise:
 /**
  * Create a function that converts Celcius to Fahrenheit
@@ -165,10 +161,21 @@ console.log(fn(5,16))
  * convCtoF(0) - 32
  * convCtoF(10) -50
  */
-
 function convCtoF(temp) {
-    F = temp * 1.8 + 32
-    return F
+  F = temp * 1.8 + 32;
+  return F;
 }
+console.log(convCtoF(10));
 
-console.log(convCtoF(10))
+const convtCtoF = (temp) => {
+  return temp * 1.8 + 32;
+}; //Arrow Functions
+console.log(convtCtoF(100));
+console.log('functions end')
+
+
+//ARRAYS
+let arr = [20, 30, 40, 50, 100]
+console.log(arr[arr.length - 1]) //final element of array
+arr.push(200) //adding an element to the end of array
+console.log(arr)
