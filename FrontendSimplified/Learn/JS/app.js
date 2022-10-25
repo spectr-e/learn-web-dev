@@ -186,13 +186,12 @@ let newArr = arr.filter(element => element < 50);
 console.log(newArr);
 
 // Array Exercise
-console.log("--exercise--");
+console.log("--exercise1--");
 /**
  * Filter out all the 'fail' elements in array
  * @examples
  * ['A+', 'A', 'FAIL'] -> ['A+', 'A']
  */
-
 let grades = ['A+', 'A', 'FAIL']
 let newGrades = grades.filter(element => element !== 'FAIL');// with filter method
 console.log(newGrades)
@@ -203,3 +202,23 @@ for (i in grades) { //without filter method
     }
 }
 console.log(brandGrades)
+
+console.log("----map");
+let arry = [1,4,5,16]
+console.log(arry);
+//useful when you want to turn elements of an array into another element
+let newArry = arr.map(element => 'cents')
+console.log(newArry);
+
+console.log("--exercise2--");
+/**
+ * Turn each element in an array of dollars into cents
+ * 
+ * @examples
+ * [1,2,3,4] -> [100,200,300,400]
+ */
+let dollars = [1,2,3,4,5]
+let newDollars = dollars.map ((element) => {
+    return element * 100;
+})
+console.log(newDollars)
