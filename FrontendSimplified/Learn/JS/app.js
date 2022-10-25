@@ -182,7 +182,7 @@ arr.push(200); //adding an element to the end of array
 console.log(arr);
 
 console.log("----filter");
-let newArr = arr.filter(element => element < 50);
+let newArr = arr.filter((element) => element < 50);
 console.log(newArr);
 
 // Array Exercise
@@ -192,33 +192,144 @@ console.log("--exercise1--");
  * @examples
  * ['A+', 'A', 'FAIL'] -> ['A+', 'A']
  */
-let grades = ['A+', 'A', 'FAIL']
-let newGrades = grades.filter(element => element !== 'FAIL');// with filter method
-console.log(newGrades)
-let brandGrades = []
-for (i in grades) { //without filter method
-    if (grades[i] !== 'FAIL') {
-        brandGrades.push(grades[i])
-    }
+let grades = ["A+", "A", "FAIL"];
+let newGrades = grades.filter((element) => element !== "FAIL"); // with filter method
+console.log(newGrades);
+let brandGrades = [];
+for (i in grades) {
+  //without filter method
+  if (grades[i] !== "FAIL") {
+    brandGrades.push(grades[i]);
+  }
 }
-console.log(brandGrades)
+console.log(brandGrades);
 
 console.log("----map");
-let arry = [1,4,5,16]
+let arry = [1, 4, 5, 16];
 console.log(arry);
 //useful when you want to turn elements of an array into another element
-let newArry = arr.map(element => 'cents')
+let newArry = arr.map((element) => "cents");
 console.log(newArry);
 
 console.log("--exercise2--");
 /**
  * Turn each element in an array of dollars into cents
- * 
+ *
  * @examples
  * [1,2,3,4] -> [100,200,300,400]
  */
-let dollars = [1,2,3,4,5]
-let newDollars = dollars.map ((element) => {
-    return element * 100;
-})
-console.log(newDollars)
+
+//map method (exercise 2)
+let dollars = [1, 2, 3, 4, 5];
+let newDollars = dollars.map((element) => {
+  return element * 100;
+});
+console.log(newDollars);
+
+//for loop method (exercise 2)
+let brandDollars = [];
+for (i in dollars) {
+  brandDollars.push(dollars[i] * 100);
+}
+console.log(brandDollars);
+console.log("_____________");
+
+//OBJECTS
+console.log("OBJECTS");
+console.log("- They are used to store multiple properties in one variable.");
+
+let users = [
+  {
+    username: "kamaujosia",
+    email: "kamaujosia@gmail.com",
+    password: "test!a",
+    level: "Masters",
+    lessonComplete: [0, 1],
+  },
+  {
+    username: "spectre",
+    email: "devs.josia@gmail.com",
+    password: "test!b",
+    level: "Elite",
+    lessonComplete: [0, 1, 2, 3],
+  },
+];
+// console.log(users[0]);
+// console.log(users[0].username);
+// console.log(users[1].lessonComplete.map((el) => el * 5));
+console.log("-----------------");
+
+console.log(
+  "This is logging a user into application. make sure to add password property to the arrays"
+);
+function login(email, password) {
+  for (i in users) {
+    if (users[i].email === email) {
+      console.log("verifying...");
+      if (users[i].password === password) {
+        console.log("Logging in now!");
+      } else {
+        console.log("Email or password incorrect");
+      }
+      return;
+    }
+  }
+  console.log("Could not find the user. Email or Password incorrect!");
+}
+login("kamaujosia@gmail.com", "test!a");
+console.log("-----------------");
+
+console.log(`EXCERCISE
+-----------------
+Create a register FUNCTION that accepts these parameters:
+- username
+- email
+- password
+- subscriptionStatus
+- discordId
+- lessonCompleted
+
+Inside your register function:
+a. Create a user object
+b. Push this user object onto the 'users' array`);
+
+function register(user) {
+  users.push(user);
+}
+
+register({
+  username: "bestFriend",
+  email: "bestie@gmail.com",
+  password: "test!c",
+  subscriptionStatus: "VIP",
+  discordId: "bestie200",
+  lessonCompleted: [0, 1, 2, 3, 4],
+});
+console.log(users[2]);
+console.log("_____________");
+
+//DOM
+console.log("DOM (Document Object Model)");
+console.log(
+  `- The DOM allows you to access and change the styling and content of elements on your website.
+  \n A. Accessing an element.
+  \n - Add an 'id' to the element in the html file, then;
+  \n        document.querySelector("#author")
+  \n        document.getElementById("author")
+  \n      N:B - The Null Error : Make sure the html loads before the JS loads. Add a 'defer' clause after the <script> tag in you html.
+  \n B. Changing the HTML (content of and element tag).
+  \n        document.querySelector('#author').innerHTML = 'Spectre'
+  \n - To concatenate use (+=) instead of (=);`
+);
+console.log(document.querySelector("#title"));
+console.log(document.getElementById("title"));
+document.querySelector("#title").innerHTML += " Spectre"; // Changes the content of the tag element.
+document.querySelector("#title").style.fontSize = "48px"; // Changes the CSS of the tag element.
+
+//ONCLICK LISTENERS - add 'onclick' property to your HTML first
+function changeTitleToRed() {
+  document.querySelector("#title").style.color = "Red";
+}
+function toggleDarkMode() {
+    document.querySelector('body').classList.toggle('dark-theme')
+}
