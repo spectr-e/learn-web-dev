@@ -171,11 +171,28 @@ const convtCtoF = (temp) => {
   return temp * 1.8 + 32;
 }; //Arrow Functions
 console.log(convtCtoF(100));
-console.log('functions end')
-
+console.log("_____________");
 
 //ARRAYS
-let arr = [20, 30, 40, 50, 100]
-console.log(arr[arr.length - 1]) //final element of array
-arr.push(200) //adding an element to the end of array
-console.log(arr)
+console.log("ARRAYS");
+console.log("----basics");
+let arr = [20, 30, 40, 50, 100];
+console.log(arr[arr.length - 1]); //final element of array
+arr.push(200); //adding an element to the end of array
+console.log(arr);
+
+console.log("----filter");
+let newArr = arr.filter(element => element < 50);
+console.log(newArr);
+
+// Array Exercise
+console.log("--exercise--");
+/**
+ * Filter out all the 'fail' elements in array
+ * @examples
+ * ['A+', 'A', 'FAIL'] -> ['A+', 'A']
+ */
+
+let grades = ['A+', 'A', 'FAIL']
+let newGrades = grades.filter(element => element !== 'FAIL');
+console.log(newGrades)
