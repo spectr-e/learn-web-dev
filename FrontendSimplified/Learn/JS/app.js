@@ -194,5 +194,12 @@ console.log("--exercise--");
  */
 
 let grades = ['A+', 'A', 'FAIL']
-let newGrades = grades.filter(element => element !== 'FAIL');
+let newGrades = grades.filter(element => element !== 'FAIL');// with filter method
 console.log(newGrades)
+let brandGrades = []
+for (i in grades) { //without filter method
+    if (grades[i] !== 'FAIL') {
+        brandGrades.push(grades[i])
+    }
+}
+console.log(brandGrades)
