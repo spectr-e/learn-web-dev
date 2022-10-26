@@ -57,7 +57,7 @@ console.log("EXERCISE:");
 console.log("-------------");
 console.log(
     `1. Create a function called 'getVideo'
-    2. Accept a parameter called 'substatus'
+    2. Accept a parameter called 'subStatus'
     3. Return a new 'Promise' inside of the function that:
             - if 'VIP' resolve 'show video'
             - if 'FREE' resolve 'show trailer' 
