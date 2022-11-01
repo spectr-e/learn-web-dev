@@ -66,14 +66,14 @@ console.log(isOdd(10));
 //Given a number, retun 1 if even otherwise -1 (booleanInteger)
 console.log("Q11: Return 1 if even and -1 if odd");
 function booleanInteger(a) {
-  return (a % 2 === 0 ? 1 : -1);
+  return a % 2 === 0 ? 1 : -1;
 }
 console.log(booleanInteger(10));
 
 // Given two strings, if the first is equal to 'LOGGED_IN' and the second string is 'SUBSCRIBED' return true, otherwise, return false
 console.log("Q12: Is a user logged in and subscribed?");
 function isLoggedInAndSubscribed(login, sub) {
-  return (login === 'LOGGED_IN' && sub === 'SUBSCRIBED' ? true : false)
+  // tenary operators
+  return login === "LOGGED_IN" && sub === "SUBSCRIBED" ? true : false;
 }
-console.log(isLoggedInAndSubscribed('LOGGED_IN', 'UNSUBSCRIBED'));
-
+console.log(isLoggedInAndSubscribed("LOGGED_IN", "UNSUBSCRIBED"));
